@@ -6,7 +6,7 @@ metadata:
   annotations:
     # pipelinesascode.tekton.dev/on-comment: "^/(help|(assign|unassign|label|unlabel)[ ].*)"
     pipelinesascode.tekton.dev/max-keep-runs: "5"
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "main"
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "master"
 spec:
   pipelineSpec:
     tasks:
